@@ -1,0 +1,294 @@
+\hypertarget{class_statistic}{}\doxysection{Statistic Class Reference}
+\label{class_statistic}\index{Statistic@{Statistic}}
+
+
+Reprezentuje rozkład normalny z średnią i odchyleniem standardowym.  
+
+
+
+
+{\ttfamily \#include $<$Statistic.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_statistic_a00637756290a7a4c8444e7076c135466}{Statistic}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistic_a99d09dd167504a48337c7f8f7cb96dcc}{Statistic}} (const \mbox{\hyperlink{class_statistic}{Statistic}} \&src)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_statistic_a273cc8bd352a4fa0c18006971c008424}\label{class_statistic_a273cc8bd352a4fa0c18006971c008424}} 
+{\bfseries $\sim$\+Statistic} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistic_ae2020da0d1fb3aa9acb026aee3b4c4b0}{set\+Mean}} (double mean)
+\begin{DoxyCompactList}\small\item\em Ustawia średnią rozkładu normalnego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistic_a223c18df090c37ad9ba2b8ecdb5efb91}{set\+Std\+Dev}} (double std\+Dev)
+\begin{DoxyCompactList}\small\item\em Ustawia odchylenie standardowe rozkładu normalnego. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_statistic_a4c6f683e0215f10484e5ee7e64188d79}{get\+Mean}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera średnią rozkładu normalnego. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_statistic_a01aa899860d20462879c33c292fe59a3}{get\+Std\+Dev}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera odchylenie standardowe rozkładu normalnego. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_statistic_a50aa6bb7bbf37da15d859c0b47e37e5e}{normal\+Distribution}} (double x) const
+\begin{DoxyCompactList}\small\item\em Oblicza rozkład normalny du danej wartości. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistic_a00637756290a7a4c8444e7076c135466}{Statistic}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistic_a99d09dd167504a48337c7f8f7cb96dcc}{Statistic}} (const \mbox{\hyperlink{class_statistic}{Statistic}} \&src)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistic_a273cc8bd352a4fa0c18006971c008424}{$\sim$\+Statistic}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistic_ae2020da0d1fb3aa9acb026aee3b4c4b0}{set\+Mean}} (double mean)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiająca średnią. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistic_a223c18df090c37ad9ba2b8ecdb5efb91}{set\+Std\+Dev}} (double std\+Dev)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiająca odchylenie standardowe. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_statistic_a4c6f683e0215f10484e5ee7e64188d79}{get\+Mean}} () const
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca średnią. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_statistic_a01aa899860d20462879c33c292fe59a3}{get\+Std\+Dev}} () const
+\begin{DoxyCompactList}\small\item\em Funkcja dostępu do składowej mean. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_statistic_a50aa6bb7bbf37da15d859c0b47e37e5e}{normal\+Distribution}} (double x) const
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca rozkład normalny dla danych wejściowych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentuje rozkład normalny z średnią i odchyleniem standardowym. 
+
+Klasa służąca do obliczania rozkładu normalnego.
+
+Ta klasa zapewnia reprezentację rozkładu normalnego z średnią i odchyleniem standardowym. Również zapewnia metody do obliczania rozkładu normalnego dla danej wartości. Wzór na rozkład normalny użyty w tej klasie to\+:
+
+$ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $
+
+gdzie $ \mu $ jest średnią, a $ \sigma $ jest odchyleniem standardowym.
+
+Klasa zawiera konstruktor domyślny, konstruktor kopiujący, destruktor, funkcję dostępu do składowych oraz funkcję obliczeniową obliczającą rozkład normalny. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_statistic_a00637756290a7a4c8444e7076c135466}\label{class_statistic_a00637756290a7a4c8444e7076c135466}} 
+\index{Statistic@{Statistic}!Statistic@{Statistic}}
+\index{Statistic@{Statistic}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{Statistic()}{Statistic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Statistic\+::\+Statistic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor domyślny. 
+
+Tworzy nową instancję klasy \mbox{\hyperlink{class_statistic}{Statistic}} z średnią i odchyleniem standardowym ustawionymi na 0. \mbox{\Hypertarget{class_statistic_a99d09dd167504a48337c7f8f7cb96dcc}\label{class_statistic_a99d09dd167504a48337c7f8f7cb96dcc}} 
+\index{Statistic@{Statistic}!Statistic@{Statistic}}
+\index{Statistic@{Statistic}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{Statistic()}{Statistic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Statistic\+::\+Statistic (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_statistic}{Statistic}} \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor kopiujący. 
+
+Tworzy nową instancję klasy \mbox{\hyperlink{class_statistic}{Statistic}} jako kopię danej instancji.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Instancja do skopiowania. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_statistic_a00637756290a7a4c8444e7076c135466}\label{class_statistic_a00637756290a7a4c8444e7076c135466}} 
+\index{Statistic@{Statistic}!Statistic@{Statistic}}
+\index{Statistic@{Statistic}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{Statistic()}{Statistic()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Statistic\+::\+Statistic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny. 
+
+Inicjalizuje średnią i odchylenie standardowe domyślnymi wartościami. \mbox{\Hypertarget{class_statistic_a99d09dd167504a48337c7f8f7cb96dcc}\label{class_statistic_a99d09dd167504a48337c7f8f7cb96dcc}} 
+\index{Statistic@{Statistic}!Statistic@{Statistic}}
+\index{Statistic@{Statistic}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{Statistic()}{Statistic()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Statistic\+::\+Statistic (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_statistic}{Statistic}} \&}]{src }\end{DoxyParamCaption})}
+
+
+
+Konstruktor kopiujący. 
+
+Kopiuje obiekt podanego jako argument.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Obiekt do skopiowania. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_statistic_a273cc8bd352a4fa0c18006971c008424}\label{class_statistic_a273cc8bd352a4fa0c18006971c008424}} 
+\index{Statistic@{Statistic}!````~Statistic@{$\sim$Statistic}}
+\index{````~Statistic@{$\sim$Statistic}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{$\sim$Statistic()}{~Statistic()}}
+{\footnotesize\ttfamily Statistic\+::$\sim$\+Statistic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+Zwalnia pamięć zaalokowaną dla obiektu. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_statistic_a4c6f683e0215f10484e5ee7e64188d79}\label{class_statistic_a4c6f683e0215f10484e5ee7e64188d79}} 
+\index{Statistic@{Statistic}!getMean@{getMean}}
+\index{getMean@{getMean}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{getMean()}{getMean()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Statistic\+::get\+Mean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera średnią rozkładu normalnego. 
+
+\begin{DoxyReturn}{Returns}
+Średnia rozkładu normalnego. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_statistic_a4c6f683e0215f10484e5ee7e64188d79}\label{class_statistic_a4c6f683e0215f10484e5ee7e64188d79}} 
+\index{Statistic@{Statistic}!getMean@{getMean}}
+\index{getMean@{getMean}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{getMean()}{getMean()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Statistic\+::get\+Mean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Funkcja zwracająca średnią. 
+
+Zwraca średnią rozkładu normalnego.
+
+\begin{DoxyReturn}{Returns}
+Średnia rozkładu normalnego. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_statistic_a01aa899860d20462879c33c292fe59a3}\label{class_statistic_a01aa899860d20462879c33c292fe59a3}} 
+\index{Statistic@{Statistic}!getStdDev@{getStdDev}}
+\index{getStdDev@{getStdDev}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{getStdDev()}{getStdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Statistic\+::get\+Std\+Dev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobiera odchylenie standardowe rozkładu normalnego. 
+
+\begin{DoxyReturn}{Returns}
+Odchylenie standardowe rozkładu normalnego. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_statistic_a01aa899860d20462879c33c292fe59a3}\label{class_statistic_a01aa899860d20462879c33c292fe59a3}} 
+\index{Statistic@{Statistic}!getStdDev@{getStdDev}}
+\index{getStdDev@{getStdDev}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{getStdDev()}{getStdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Statistic\+::get\+Std\+Dev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Funkcja dostępu do składowej mean. 
+
+Zwraca wartość średnią.
+
+\begin{DoxyReturn}{Returns}
+Wartość średnia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_statistic_a50aa6bb7bbf37da15d859c0b47e37e5e}\label{class_statistic_a50aa6bb7bbf37da15d859c0b47e37e5e}} 
+\index{Statistic@{Statistic}!normalDistribution@{normalDistribution}}
+\index{normalDistribution@{normalDistribution}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{normalDistribution()}{normalDistribution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Statistic\+::normal\+Distribution (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Oblicza rozkład normalny du danej wartości. 
+
+Oblicza wartość funkcji rozkładu normalnego dla danej wartości.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Wartość dla której chcemy obliczyć rozkład normalny. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość rozkładu normalnego dla danej wartości. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_statistic_a50aa6bb7bbf37da15d859c0b47e37e5e}\label{class_statistic_a50aa6bb7bbf37da15d859c0b47e37e5e}} 
+\index{Statistic@{Statistic}!normalDistribution@{normalDistribution}}
+\index{normalDistribution@{normalDistribution}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{normalDistribution()}{normalDistribution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Statistic\+::normal\+Distribution (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption}) const}
+
+
+
+Funkcja obliczająca rozkład normalny dla danych wejściowych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Wartość dla której obliczamy rozkład normalny \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rozkład normalny dla danych wejściowych 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_statistic_ae2020da0d1fb3aa9acb026aee3b4c4b0}\label{class_statistic_ae2020da0d1fb3aa9acb026aee3b4c4b0}} 
+\index{Statistic@{Statistic}!setMean@{setMean}}
+\index{setMean@{setMean}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{setMean()}{setMean()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Statistic\+::set\+Mean (\begin{DoxyParamCaption}\item[{double}]{mean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ustawia średnią rozkładu normalnego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mean} & Średnia rozkładu normalnego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_statistic_ae2020da0d1fb3aa9acb026aee3b4c4b0}\label{class_statistic_ae2020da0d1fb3aa9acb026aee3b4c4b0}} 
+\index{Statistic@{Statistic}!setMean@{setMean}}
+\index{setMean@{setMean}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{setMean()}{setMean()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Statistic\+::set\+Mean (\begin{DoxyParamCaption}\item[{double}]{mean }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiająca średnią. 
+
+Ustawia średnią rozkładu normalnego.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Średnia do ustawienia. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_statistic_a223c18df090c37ad9ba2b8ecdb5efb91}\label{class_statistic_a223c18df090c37ad9ba2b8ecdb5efb91}} 
+\index{Statistic@{Statistic}!setStdDev@{setStdDev}}
+\index{setStdDev@{setStdDev}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{setStdDev()}{setStdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Statistic\+::set\+Std\+Dev (\begin{DoxyParamCaption}\item[{double}]{std\+Dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ustawia odchylenie standardowe rozkładu normalnego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+Dev} & Odchylenie standardowe rozkładu normalnego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_statistic_a223c18df090c37ad9ba2b8ecdb5efb91}\label{class_statistic_a223c18df090c37ad9ba2b8ecdb5efb91}} 
+\index{Statistic@{Statistic}!setStdDev@{setStdDev}}
+\index{setStdDev@{setStdDev}!Statistic@{Statistic}}
+\doxysubsubsection{\texorpdfstring{setStdDev()}{setStdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Statistic\+::set\+Std\+Dev (\begin{DoxyParamCaption}\item[{double}]{std\+Dev }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiająca odchylenie standardowe. 
+
+Ustawia odchylenie standardowe rozkładu normalnego.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Odchylenie standardowe do ustawienia. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Statistic.\+cpp\item 
+\mbox{\hyperlink{_statistic_8h}{Statistic.\+h}}\end{DoxyCompactItemize}
