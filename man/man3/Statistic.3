@@ -1,0 +1,253 @@
+.TH "Statistic" 3 "Wed Feb 1 2023" "Zaliczenie165433" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Statistic \- Reprezentuje rozkład normalny z średnią i odchyleniem standardowym\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Statistic\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStatistic\fP ()"
+.br
+.RI "Konstruktor domyślny\&. "
+.ti -1c
+.RI "\fBStatistic\fP (const \fBStatistic\fP &src)"
+.br
+.RI "Konstruktor kopiujący\&. "
+.ti -1c
+.RI "\fB~Statistic\fP ()"
+.br
+.RI "Destruktor\&. "
+.ti -1c
+.RI "void \fBsetMean\fP (double mean)"
+.br
+.RI "Ustawia średnią rozkładu normalnego\&. "
+.ti -1c
+.RI "void \fBsetStdDev\fP (double stdDev)"
+.br
+.RI "Ustawia odchylenie standardowe rozkładu normalnego\&. "
+.ti -1c
+.RI "double \fBgetMean\fP () const"
+.br
+.RI "Pobiera średnią rozkładu normalnego\&. "
+.ti -1c
+.RI "double \fBgetStdDev\fP () const"
+.br
+.RI "Pobiera odchylenie standardowe rozkładu normalnego\&. "
+.ti -1c
+.RI "double \fBnormalDistribution\fP (double x) const"
+.br
+.RI "Oblicza rozkład normalny du danej wartości\&. "
+.ti -1c
+.RI "\fBStatistic\fP ()"
+.br
+.RI "Konstruktor domyślny\&. "
+.ti -1c
+.RI "\fBStatistic\fP (const \fBStatistic\fP &src)"
+.br
+.RI "Konstruktor kopiujący\&. "
+.ti -1c
+.RI "\fB~Statistic\fP ()"
+.br
+.RI "Destruktor\&. "
+.ti -1c
+.RI "void \fBsetMean\fP (double mean)"
+.br
+.RI "Funkcja ustawiająca średnią\&. "
+.ti -1c
+.RI "void \fBsetStdDev\fP (double stdDev)"
+.br
+.RI "Funkcja ustawiająca odchylenie standardowe\&. "
+.ti -1c
+.RI "double \fBgetMean\fP () const"
+.br
+.RI "Funkcja zwracająca średnią\&. "
+.ti -1c
+.RI "double \fBgetStdDev\fP () const"
+.br
+.RI "Funkcja dostępu do składowej mean\&. "
+.ti -1c
+.RI "double \fBnormalDistribution\fP (double x) const"
+.br
+.RI "Funkcja obliczająca rozkład normalny dla danych wejściowych\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Reprezentuje rozkład normalny z średnią i odchyleniem standardowym\&. 
+
+Klasa służąca do obliczania rozkładu normalnego\&.
+.PP
+Ta klasa zapewnia reprezentację rozkładu normalnego z średnią i odchyleniem standardowym\&. Również zapewnia metody do obliczania rozkładu normalnego dla danej wartości\&. Wzór na rozkład normalny użyty w tej klasie to:
+.PP
+$ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $.PP
+gdzie $ \mu $ jest średnią, a $ \sigma $ jest odchyleniem standardowym\&.
+.PP
+Klasa zawiera konstruktor domyślny, konstruktor kopiujący, destruktor, funkcję dostępu do składowych oraz funkcję obliczeniową obliczającą rozkład normalny\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Statistic::Statistic ()\fC [inline]\fP"
+
+.PP
+Konstruktor domyślny\&. Tworzy nową instancję klasy \fBStatistic\fP z średnią i odchyleniem standardowym ustawionymi na 0\&. 
+.SS "Statistic::Statistic (const \fBStatistic\fP & src)\fC [inline]\fP"
+
+.PP
+Konstruktor kopiujący\&. Tworzy nową instancję klasy \fBStatistic\fP jako kopię danej instancji\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIsrc\fP Instancja do skopiowania\&. 
+.RE
+.PP
+
+.SS "Statistic::Statistic ()"
+
+.PP
+Konstruktor domyślny\&. Inicjalizuje średnią i odchylenie standardowe domyślnymi wartościami\&. 
+.SS "Statistic::Statistic (const \fBStatistic\fP & src)"
+
+.PP
+Konstruktor kopiujący\&. Kopiuje obiekt podanego jako argument\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIs\fP Obiekt do skopiowania\&. 
+.RE
+.PP
+
+.SS "Statistic::~Statistic ()"
+
+.PP
+Destruktor\&. Zwalnia pamięć zaalokowaną dla obiektu\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "double Statistic::getMean () const\fC [inline]\fP"
+
+.PP
+Pobiera średnią rozkładu normalnego\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Średnia rozkładu normalnego\&. 
+.RE
+.PP
+
+.SS "double Statistic::getMean () const"
+
+.PP
+Funkcja zwracająca średnią\&. Zwraca średnią rozkładu normalnego\&.
+.PP
+\fBReturns\fP
+.RS 4
+Średnia rozkładu normalnego\&. 
+.RE
+.PP
+
+.SS "double Statistic::getStdDev () const\fC [inline]\fP"
+
+.PP
+Pobiera odchylenie standardowe rozkładu normalnego\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Odchylenie standardowe rozkładu normalnego\&. 
+.RE
+.PP
+
+.SS "double Statistic::getStdDev () const"
+
+.PP
+Funkcja dostępu do składowej mean\&. Zwraca wartość średnią\&.
+.PP
+\fBReturns\fP
+.RS 4
+Wartość średnia 
+.RE
+.PP
+
+.SS "double Statistic::normalDistribution (double x) const\fC [inline]\fP"
+
+.PP
+Oblicza rozkład normalny du danej wartości\&. Oblicza wartość funkcji rozkładu normalnego dla danej wartości\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP Wartość dla której chcemy obliczyć rozkład normalny\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Wartość rozkładu normalnego dla danej wartości\&. 
+.RE
+.PP
+
+.SS "double Statistic::normalDistribution (double x) const"
+
+.PP
+Funkcja obliczająca rozkład normalny dla danych wejściowych\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP Wartość dla której obliczamy rozkład normalny 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Rozkład normalny dla danych wejściowych 
+.RE
+.PP
+
+.SS "void Statistic::setMean (double mean)\fC [inline]\fP"
+
+.PP
+Ustawia średnią rozkładu normalnego\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImean\fP Średnia rozkładu normalnego\&. 
+.RE
+.PP
+
+.SS "void Statistic::setMean (double mean)"
+
+.PP
+Funkcja ustawiająca średnią\&. Ustawia średnią rozkładu normalnego\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIm\fP Średnia do ustawienia\&. 
+.RE
+.PP
+
+.SS "void Statistic::setStdDev (double stdDev)\fC [inline]\fP"
+
+.PP
+Ustawia odchylenie standardowe rozkładu normalnego\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstdDev\fP Odchylenie standardowe rozkładu normalnego\&. 
+.RE
+.PP
+
+.SS "void Statistic::setStdDev (double stdDev)"
+
+.PP
+Funkcja ustawiająca odchylenie standardowe\&. Ustawia odchylenie standardowe rozkładu normalnego\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIs\fP Odchylenie standardowe do ustawienia\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zaliczenie165433 from the source code\&.

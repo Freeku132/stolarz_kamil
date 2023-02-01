@@ -1,0 +1,220 @@
+.TH "Sequence" 3 "Wed Feb 1 2023" "Zaliczenie165433" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Sequence \- Klasa \fBSequence\fP reprezentuje sekwencję wartości\&. Zapewnia zestaw funkcji do obliczania całki oznaczonej sekwencji na określonym przedziale\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Secuence\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSequence\fP ()"
+.br
+.RI "Konstruuje domyślną sekwencję\&. "
+.ti -1c
+.RI "\fBSequence\fP (const \fBSequence\fP &other)"
+.br
+.RI "Konstruuje kopię innej sekwencji\&. "
+.ti -1c
+.RI "\fB~Sequence\fP ()"
+.br
+.RI "Niszczy sekwencję\&. "
+.ti -1c
+.RI "double \fBgetValue\fP (int index) const"
+.br
+.RI "Zwraca wartość w określonym indeksie\&. "
+.ti -1c
+.RI "void \fBsetValue\fP (int index, double value)"
+.br
+.RI "Ustawia wartość w określonym indeksie\&. "
+.ti -1c
+.RI "double \fBcomputeIntegral\fP (double start, double end) const"
+.br
+.RI "Oblicza całkę oznaczoną sekwencji na określonym przedziale\&. "
+.ti -1c
+.RI "\fBSequence\fP ()"
+.br
+.RI "Konstruuje domyślną sekwencję\&. "
+.ti -1c
+.RI "\fBSequence\fP (const \fBSequence\fP &other)"
+.br
+.RI "Konstruuje kopię innej sekwencji\&. "
+.ti -1c
+.RI "\fB~Sequence\fP ()"
+.br
+.RI "Niszczy sekwencję\&. "
+.ti -1c
+.RI "double \fBgetValue\fP (int index) const"
+.br
+.RI "Zwraca wartość w określonym indeksie\&. "
+.ti -1c
+.RI "void \fBsetValue\fP (int index, double value)"
+.br
+.RI "Ustawia wartość w określonym indeksie\&. "
+.ti -1c
+.RI "double \fBcomputeIntegral\fP (double start, double end) const"
+.br
+.RI "Oblicza całkę oznaczoną sekwencji na określonym przedziale\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Klasa \fBSequence\fP reprezentuje sekwencję wartości\&. Zapewnia zestaw funkcji do obliczania całki oznaczonej sekwencji na określonym przedziale\&. 
+
+
+.SH "Konstruktory"
+.PP
+.IP "\(bu" 2
+\fBSequence()\fP
+.IP "\(bu" 2
+\fBSequence(const Sequence &other)\fP
+.PP
+.SH "Destruktor"
+.PP
+.IP "\(bu" 2
+\fB~Sequence()\fP
+.PP
+.SH "Funkcje dostępu"
+.PP
+.IP "\(bu" 2
+double \fBgetValue(int index) const\fP
+.IP "\(bu" 2
+void \fBsetValue(int index, double value)\fP
+.PP
+.SH "Funkcje obliczeniowe"
+.PP
+.IP "\(bu" 2
+double \fBcomputeIntegral(double start, double end) const\fP 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Sequence::Sequence (const \fBSequence\fP & other)\fC [inline]\fP"
+
+.PP
+Konstruuje kopię innej sekwencji\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP Sekwencja do skopiowania\&. 
+.RE
+.PP
+
+.SS "Sequence::Sequence (const \fBSequence\fP & other)"
+
+.PP
+Konstruuje kopię innej sekwencji\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP Sekwencja do skopiowania\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "double Sequence::computeIntegral (double start, double end) const\fC [inline]\fP"
+
+.PP
+Oblicza całkę oznaczoną sekwencji na określonym przedziale\&. Całka oznaczona jest obliczana jako suma wartości sekwencji pomnożona przez długość przedziału\&. Wzór na całkę oznaczoną:
+.PP
+\[
+\int_{a}^{b} f(x) dx = \sum_{i=0}^{n-1} values_i \cdot \frac{b-a}{n}
+\].PP
+\fBParameters\fP
+.RS 4
+\fIstart\fP Początek przedziału\&. 
+.br
+\fIend\fP Koniec przedziału\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Całka oznaczona sekwencji na określonym przedziale\&. 
+.RE
+.PP
+
+.SS "double Sequence::computeIntegral (double start, double end) const"
+
+.PP
+Oblicza całkę oznaczoną sekwencji na określonym przedziale\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstart\fP Początek przedziału\&. 
+.br
+\fIend\fP Koniec przedziału\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Całka oznaczona sekwencji na określonym przedziale\&. 
+.RE
+.PP
+
+.SS "double Sequence::getValue (int index) const\fC [inline]\fP"
+
+.PP
+Zwraca wartość w określonym indeksie\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP Indeks wartości\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Wartość w określonym indeksie\&. 
+.RE
+.PP
+
+.SS "double Sequence::getValue (int index) const"
+
+.PP
+Zwraca wartość w określonym indeksie\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP Indeks wartości\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Wartość w określonym indeksie\&. 
+.RE
+.PP
+
+.SS "void Sequence::setValue (int index, double value)\fC [inline]\fP"
+
+.PP
+Ustawia wartość w określonym indeksie\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP Indeks wartości\&. 
+.br
+\fIvalue\fP Wartość do ustawienia\&. 
+.RE
+.PP
+
+.SS "void Sequence::setValue (int index, double value)"
+
+.PP
+Ustawia wartość w określonym indeksie\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP Indeks wartości\&. 
+.br
+\fIvalue\fP Wartość do ustawienia\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zaliczenie165433 from the source code\&.
